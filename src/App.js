@@ -14,6 +14,8 @@ import { useUserContext } from "./context/UserContext";
 import { useModalContext } from "./context/ModalContext";
 
 const Landing = React.lazy(() => import("./pages/Landing"));
+const Login = React.lazy(() => import("./pages/Login"));
+const Register = React.lazy(() => import("./pages/Register"));
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
         >
           <Routes>
             <Route path="/" element={<Landing />} />
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
             <Route path="*" element={<Landing />} />
           </Routes>
         </Suspense>

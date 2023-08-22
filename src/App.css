@@ -13,6 +13,7 @@
   --orange-text: #cf8015;
   --primaryColor: #228026;
   --text: #585757;
+  --grey: #979797;
 }
 
 #root {
@@ -32,19 +33,20 @@ body {
 h1 {
   margin-top: 0px;
   margin-bottom: 1.3vw;
-  font-size: 4.7vw;
-  line-height: 5.6vw;
+  font-size: 3.5vw;
+  line-height: 4vw;
   font-family: MontserratBold;
   font-weight: 900;
-  line-height: 120%;
+  /* line-height: 120%; */
 }
 
 h2 {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 1.3vw;
   border-radius: 11px;
-  font-size: 3.2vw;
-  line-height: 4vw;
+  font-size: 2.5vw;
+  line-height: 3vw;
+  font-family: MontserratBold;
 }
 
 h3 {
@@ -78,7 +80,10 @@ h6 {
   font-weight: 300;
 }
 
-p {
+p,
+label,
+input,
+input::placeholder {
   margin-bottom: 0px;
   font-size: 1.1vw;
   line-height: 1.7vw;
@@ -97,13 +102,37 @@ button {
   border: none;
 }
 
+input {
+  height: 4vw;
+  border: none;
+  background: transparent;
+  border-radius: 15px;
+  padding: 1vw;
+  border: 1px solid var(--grey);
+}
+
+label {
+  margin-bottom: 0.5vw;
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.small-text {
+  font-size: 0.95vw;
+  line-height: 1.4vw;
+  font-weight: 300;
+}
+
 .text-block button,
-.partner-button {
+.partner-button,
+button {
   font-size: 1.2vw;
   font-weight: 400;
   background-color: var(--primaryColor);
   color: white;
-  border-radius: 5px;
+  border-radius: 1vw;
   width: fit-content;
   height: 3.5vw;
   width: 25%;
@@ -115,7 +144,6 @@ button {
   min-height: 40px;
   max-height: 70px;
   padding-inline: 20px;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .partner-button {
@@ -136,7 +164,6 @@ li {
 
 .b-600 {
   font-weight: 600;
-  font-family: MontserratBold;
 }
 
 .capitalize {
@@ -151,7 +178,8 @@ li {
   color: var(--orange-text);
 }
 
-.row {
+.row,
+.flex {
   display: flex;
   flex-direction: row;
 }
@@ -180,9 +208,8 @@ li {
   padding-block: 6vw;
 }
 
-nav .logo-wrap .text-fade,
-.offcanvas-title .text-fade {
-  color: var(--primaryColor);
+footer .logo-wrap .primary {
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .navlink-button {
@@ -196,6 +223,7 @@ nav .logo-wrap .text-fade,
   display: flex;
   align-items: center;
   gap: 1vw;
+  color: var(--primaryColor);
 }
 
 .logo-wrap .name {
@@ -519,6 +547,203 @@ footer svg {
   text-decoration: 1px solid var(--orange-text) underline;
 }
 
+.login-page {
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.login-wrapper button {
+  width: 100%;
+  margin: 1vw auto;
+}
+
+.login-image {
+  width: calc(100vw - 50vw);
+  object-fit: cover;
+  object-position: center;
+  /* max-width: calc(100vw - 600px); */
+}
+
+.login-block {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+}
+
+.login-wrapper {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  min-width: 400px;
+}
+
+.login-wrapper .logo-wrap {
+  margin-bottom: 50px;
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1vw;
+}
+
+.or-divider {
+  margin: 2vw auto;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2vw;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+.social-login {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--grey);
+  height: 3.5vw;
+  border-radius: 1vw;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.social-login svg {
+  height: 2vw;
+  width: 2vw;
+}
+
+.register-page {
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: white;
+  background-image: url(./assets/register.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.register-block .header-text {
+  color: white;
+}
+
+.form-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.register-block {
+  width: 50vw;
+  overflow-y: hidden;
+  margin: auto;
+  text-align: center;
+}
+
+.register-wrapper {
+  width: 100%;
+  height: 75vh;
+  overflow-y: hidden;
+}
+
+.form-wrapper {
+  background: white;
+  padding-inline: 1.5vw;
+  padding-block: 2.5vw;
+  border-radius: 1.5vw;
+  height: 75vh;
+  overflow-y: auto;
+}
+
+.form-wrapper form {
+  padding-inline: 2vw;
+  padding-block: 3vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-wrapper .flex {
+  gap: 1vw;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-wrapper button {
+  width: 25vw;
+  margin: 2vw auto;
+}
+
+.form-wrapper .input-wrap {
+  width: 46%;
+  align-items: start;
+}
+
+.usertype-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 1vw auto;
+}
+
+.usertype {
+  width: 23%;
+  min-width: 120px;
+  height: 3vw;
+  min-height: 35px;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+
+.usertype.active {
+  background-color: var(--primaryBackground);
+  color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  border: 2px solid var(--primaryColor);
+  border-radius: 50%;
+  display: flex;
+  width: 6vw;
+  height: 6vw;
+  position: relative;
+}
+
+.avatar svg {
+  width: 3vw;
+  height: 3vw;
+}
+
+.edit {
+  position: absolute;
+  bottom: 1vw;
+  right: -0.5vw;
+  width: 1.5vw !important;
+  height: 1.5vw !important;
+}
+
+.edit path {
+  fill: var(--primaryColor);
+}
+
 @media (min-width: 1900px) {
   .hero .text-block {
     width: 80%;
@@ -529,6 +754,11 @@ footer svg {
 }
 
 @media (max-width: 991px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
   h3 {
     font-size: 20px;
     line-height: 20px;
@@ -545,13 +775,31 @@ footer svg {
   footer a,
   footer p,
   button,
-  .hero button {
+  .hero button,
+  label,
+  input,
+  input::placeholder,
+  .or-divider,
+  .navlink-button {
     font-size: 13px;
     line-height: 20px;
   }
 
+  .small-text {
+    font-size: 10.5px;
+    line-height: 16px;
+  }
+
+  input {
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 15px;
+  }
+
   .navlink-button {
     width: 120px;
+    font-size: 13px;
+    line-height: 20px;
   }
 
   .links li:first-child {
@@ -575,6 +823,54 @@ footer svg {
 
   .subscribe {
     width: 320px;
+  }
+
+  .register-block {
+    width: 70vw;
+  }
+
+  .avatar svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .edit {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .login-image {
+    width: 300px;
+  }
+
+  .login-block {
+    width: 100%;
+  }
+
+  .input-wrap {
+    margin-bottom: 20px;
+  }
+
+  .login-wrapper button {
+    margin-block: 30px;
+  }
+
+  .button-group {
+    gap: 20px;
+  }
+
+  .social-login {
+    height: 40px;
+  }
+
+  .social-login svg {
+    height: 30px;
+    width: 30px;
   }
 
   .copyrights {
@@ -631,6 +927,31 @@ footer svg {
   .hero .text-block {
     width: 100%;
     margin: 2em;
+  }
+
+  .register-page {
+    padding-block: 40px;
+  }
+
+  .register-block {
+    width: 90vw;
+  }
+
+  .login-wrapper {
+    padding-block: 40px;
+  }
+
+  .login-image {
+    width: 200px;
+  }
+
+  .login-block,
+  .login-wrapper {
+    min-width: 300px;
+  }
+
+  .login-block {
+    overflow-y: auto;
   }
 
   footer {
@@ -721,6 +1042,33 @@ footer svg {
   .section-flex .text-block {
     width: 100%;
   }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-block {
+    width: 100%;
+  }
+
+  .register-block {
+    width: 100vw;
+  }
+
+  .register-page {
+    overflow-y: auto;
+    background-image: none;
+  }
+
+  .register-block .header-text {
+    color: #1e1e1e;
+  }
+
+  .register-wrapper,
+  .form-wrapper {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 425px) {
@@ -756,6 +1104,22 @@ footer svg {
   .links {
     flex-direction: column;
     gap: 25px;
+  }
+
+  .form-wrapper .flex {
+    flex-direction: column;
+  }
+
+  .form-wrapper .flex.flex-wrap {
+    flex-direction: row;
+  }
+
+  .form-wrapper .input-wrap {
+    width: 100%;
+  }
+
+  .form-wrapper input {
+    width: 100%;
   }
 
   .links ul,
@@ -826,5 +1190,10 @@ footer svg {
   .hero-img {
     height: 50vh;
     min-height: 300px;
+  }
+
+  .login-block,
+  .login-wrapper {
+    min-width: 270px;
   }
 }
