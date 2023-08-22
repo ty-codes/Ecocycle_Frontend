@@ -4,8 +4,6 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import styled from "styled-components";
 import { device } from "../constants";
 import { useMediaQuery } from "react-responsive";
-import { logo } from "../assets";
-import { NavDropdown } from 'react-bootstrap';
 import { Logo } from '.';
 
 
@@ -160,7 +158,7 @@ const Wrapper = styled(Navbar)`
 `;
 
 const Button = styled.a`
-    font-size: 1.1vw !important;
+    font-size: 1.1vw;
     background-color: ${props => props.theme.primaryColor};
     border-radius: 5px;
     height: 4vh;
