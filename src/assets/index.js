@@ -12,6 +12,7 @@ import collector from './collector.png';
 import globe from './globe.png';
 import PlasticBottles from './plastic_bottles.png';
 import bin from './bin.png';
+import man from './man.png';
 
 export {
     hero,
@@ -27,5 +28,6 @@ export {
     craftsmen,
     globe,
     PlasticBottles,
-    bin
+    bin,
+    man
 }
