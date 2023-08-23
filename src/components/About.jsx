@@ -1,14 +1,12 @@
-import styled from "styled-components";
-import { hero } from "../assets";
 import { useNavigate } from "react-router-dom";
-import { device } from "../constants";
+import { AboutCollage } from ".";
 
 export default function About() {
   const navigate = useNavigate();
   return (
     <section className="about">
       <div className="section-flex flex">
-        <img src={hero} alt="hero" />
+        <AboutCollage />
 
         <div className="text-block">
           <p className="b-600 primary">About us</p>

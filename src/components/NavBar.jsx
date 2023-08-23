@@ -37,14 +37,14 @@ export default function NavBar() {
                                 <Nav.Link href="/">Collection Centres</Nav.Link>
 
                                     <Nav.Link href="/">About Us</Nav.Link>
-                                    <Nav.Link href="/">Marketplace</Nav.Link>
+                                    <Nav.Link href="marketplace">Marketplace</Nav.Link>
 
 
                                     {isMobile && (
                                         <Create>
                                            <Nav.Link href="register">Register</Nav.Link>
 
-                                            <Button className='navlink-button' href="" >
+                                            <Button className='navlink-button' href="login" >
                                                 Sign in
                                             </Button>
                                         </Create>
@@ -91,7 +91,9 @@ const Wrapper = styled(Navbar)`
     }
 
 
-    a:not(.logo) {
+    a:not(.logo), a:not(.logo):focus,
+    a:not(.logo):hover,
+    a:not(.logo):active {
         font-style: normal;
         font-weight: 600;
         font-size: 1.1vw;
@@ -188,7 +190,9 @@ const Create = styled.div`
         flex-direction: column;
         align-self: start;
     }
-    a:not(.logo) {
+    a:not(.logo), a:not(.logo):focus,
+    a:not(.logo):hover,
+    a:not(.logo):active {
         font-style: normal;
         font-size: 1.1vw;
         margin: 0 0.5em !important;
@@ -210,6 +214,8 @@ const Create = styled.div`
         @media ${device.isSmallDevice} {
             margin: 0 0 1em 0 !important;
             align-self: start;
+            padding: 8px 0 !important;
+            font-size: 14px;
         }   
     }
    .outlined {

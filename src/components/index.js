@@ -9,6 +9,7 @@ import LoadingComponent from "./LoadingComponent";
 import Users from "./Users";
 import Partners from "./Partners";
 import Impact from "./Impact";
+import AboutCollage from "./AboutCollage";
 
 export {
     NavBar,
@@ -21,5 +22,6 @@ export {
     LoadingComponent,
     Users,
     Partners,
-    Impact
+    Impact,
+    AboutCollage
 }
