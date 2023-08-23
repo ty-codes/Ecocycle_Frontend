@@ -17,7 +17,15 @@ import RBin from './r-bin.png';
 import RHome from './recycled-home.png';
 import trashbag from './trashbag.png';
 import RBottles from './r-bottles.png';
-
+import P1 from './marketplace/p1.png';
+import P2 from './marketplace/p2.png';
+import P3 from './marketplace/p3.png';
+import P4 from './marketplace/p4.png';
+import P5 from './marketplace/p5.png';
+import P6 from './marketplace/p6.png';
+import P7 from './marketplace/p7.png';
+import P8 from './marketplace/p8.png';
+import P9 from './marketplace/p9.png';
 
 export {
     hero,
@@ -38,5 +46,14 @@ export {
     RBin,
     RHome,
     trashbag,
-    RBottles
+    RBottles,
+    P1,
+    P2,
+    P3,
+    P4,
+    P5,
+    P6,
+    P7,
+    P8,
+    P9
 }
