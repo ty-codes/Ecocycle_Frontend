@@ -125,6 +125,12 @@ label {
   font-weight: 300;
 }
 
+.tiny-text {
+    font-size: 0.75vw;
+    line-height: 1.1vw;
+    font-weight: 300;
+}
+
 .text-block button,
 .partner-button,
 button {
@@ -443,6 +449,7 @@ footer svg {
   color: white;
   padding: 0 1vw;
   width: 30%;
+  margin: 0 !important;
 }
 
 .searchbox {
@@ -781,6 +788,119 @@ footer svg {
   align-self: end;
 }
 
+.searchbar {
+  margin: 3vw 0 0 0;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-inline: 3vw;
+}
+
+.searchbar input {
+  align-self: end;
+  height: 3vw;
+  min-height: 50px;
+  outline: none;
+  border: 1px solid var(--grey);
+  border-radius: 2vw;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-left: 1vw;
+  position: relative;
+  width: 35vw;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 3vw;
+  column-gap: 1vw;
+  margin-bottom: 5vw;
+  min-height: 50vh;
+  padding-block: 4vw !important;
+}
+
+.product {
+  width: 30%;
+  background-color: transparent;
+}
+
+.product img {
+  width: 100%;
+  height: 27vh;
+  margin-bottom: 1vw;
+  border-radius: 1vw;
+  object-position: center;
+  /* object-fit: cover; */
+}
+
+.product .details {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.product svg {
+  width: 1vw;
+  height: 1vw;
+  margin-right: 0.5vw;
+}
+
+.product .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product button {
+  height: 3vw;
+  width: 15%;
+  min-height: auto;
+}
+
+.product .orange-text {
+  font-weight: 900;
+  font-size: 1.3vw;
+}
+
+.outlined-btn {
+  background-color: transparent;
+  color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+}
+
+.searchbar input::placeholder {
+  color: var(--grey);
+}
+
+.searchbar svg {
+  right: calc(3vw + 1vw);
+  top: 1vw;
+  position: absolute;
+}
+
+.tabs {
+  display: flex;
+  gap: 2vw;
+  width: 75vw;
+  margin: 2.5vw auto 0vw auto;
+  border-bottom: 1px solid var(--grey);
+  justify-content: space-between;
+}
+
+.tab {
+  width: 15%;
+  text-align: center;
+}
+
+.tab.active {
+  color: (var(--primaryColor));
+  font-weight: 600;
+  border-bottom: 0.5vw solid var(--primaryColor);
+}
+
 @media (min-width: 1900px) {
   .hero .text-block {
     width: 80%;
@@ -823,7 +943,7 @@ footer svg {
   }
 
   .small-text {
-    font-size: 10.5px;
+    font-size: 11.5px;
     line-height: 16px;
   }
 
@@ -833,11 +953,33 @@ footer svg {
     border-radius: 15px;
   }
 
+  .tiny-text {
+    font-size: 10px;
+  }
+
   .navlink-button {
     width: 120px;
     font-size: 13px;
     line-height: 20px;
   }
+
+  .searchbar svg {
+    right: calc(3vw + 10px);
+    top: 1.5vw;
+  }
+
+  .product .orange-text {
+    font-size: 15px;
+  }
+
+  .product img {
+    margin-bottom: 15px;
+  }
+
+  .product button {
+    height: 25px;
+    width: 15%;
+}
 
   .links li:first-child {
     font-size: 16px;
@@ -939,6 +1081,16 @@ footer svg {
     width: 300px;
     height: 200px;
   }
+
+  .searchbar input {
+    border-radius: 40px;
+    min-width: 300px;
+  }
+
+  .tabs {
+    width: calc(100vw - 6vw);
+    margin: 30px auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -964,6 +1116,18 @@ footer svg {
   .hero .text-block {
     width: 100%;
     margin: 2em;
+  }
+
+  .tabs {
+    overflow-y: auto;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab {
+    min-width: 110px;
   }
 
   .register-page {
@@ -1001,6 +1165,37 @@ footer svg {
     flex-wrap: wrap;
     column-gap: 50px;
     justify-content: flex-start;
+  }
+
+  .searchbar input {
+    min-height: auto;
+    height: 40px;
+    padding-left: 15px;
+  }
+
+  .searchbar svg {
+    top: 10px;
+    right: calc(3vw + 10px);
+    width: 15px;
+    width: 15px;
+  }
+
+  .products {
+    row-gap: 40px;
+    column-gap: 15px;
+    margin-bottom: 60px;
+  }
+
+  .product img {
+    margin-bottom: 20px;
+  }
+
+  .product {
+    width: 48%;
+  }
+
+  .product .details {
+    row-gap: 15px;
   }
 
   .copyrights {
@@ -1151,6 +1346,10 @@ footer svg {
     gap: 25px;
   }
 
+  .product {
+    width: 100%;
+  }
+
   .form-wrapper .flex {
     flex-direction: column;
   }
@@ -1233,6 +1432,11 @@ footer svg {
 
   .collage-block.short img {
     width: 100%;
+  }
+
+  .searchbar input {
+    width: 100%;
+    min-width: auto;
   }
 }
 
