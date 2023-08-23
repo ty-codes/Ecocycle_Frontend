@@ -6,6 +6,10 @@ import { ReactComponent as CFacebookIcon } from "./c-facebook.svg";
 import { ReactComponent as CGoogleIcon } from "./c-google.svg";
 import { ReactComponent as CameraIcon } from "./camera.svg";
 import { ReactComponent as ProfileIcon } from "./profile.svg";
+import { ReactComponent as SearchIcon } from "./search.svg";
+import { ReactComponent as BookmarkIcon } from "./bookmark.svg";
+
+
 export {
     LinkedinIcon,
     FacebookIcon,
@@ -14,5 +18,7 @@ export {
     CFacebookIcon,
     CGoogleIcon,
     CameraIcon,
-    ProfileIcon
+    ProfileIcon,
+    SearchIcon,
+    BookmarkIcon
 }
