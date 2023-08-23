@@ -3,30 +3,30 @@ Ecocycle Nigeria is a comprehensive solution designed to tackle the plastic wast
 
 This repository contains the frontend source code for Ecocycle.
 
-# Status
+## Status
 Still in progress 
 
-# Status Color Codes
+## Status Color Codes
 🟢 - _Done_
 🟡 - _In Progress_
 🔴 - _Not Started_
 
-# User types
+## User types
 - Craftman
 - Eco-collector
 - Depositor
 
-# Features
+## Features
 - User login🟢
 - User register🟢
 - View collection sites 🟡
 - Add collection site
 - Verify collection site image using AI)
-- *Craftsman*
+- **Craftsman**
 - Upload craftwork and price
 - Access plastics from collection sites at discount
 - Access collection sites
-- *Depositor*
+- **Depositor**
 - Donate recyclables
 - Access collection sites and drop off recyclables
 - Review collection sites
@@ -34,13 +34,13 @@ Still in progress
 - *Collector*
 - Upload collection site(location, image, )
 
-- *NGOs*
+- **NGOs**
 - Access collection sites for recyclables for sustainable housing development
 
-# Hosted on
+## Hosted on
 - [Vercel](https://ecocycle.vercel.app)
 
-# Backend
+## Backend
 - [Link to backend repo](https://github.com/ty-codes/Ecocycle_backend)
 
 ## Build Setup
