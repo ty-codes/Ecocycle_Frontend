@@ -10,6 +10,7 @@ import Users from "./Users";
 import Partners from "./Partners";
 import Impact from "./Impact";
 import AboutCollage from "./AboutCollage";
+import Product from "./Product";
 
 export {
     NavBar,
@@ -23,5 +24,6 @@ export {
     Users,
     Partners,
     Impact,
-    AboutCollage
+    AboutCollage,
+    Product
 }
