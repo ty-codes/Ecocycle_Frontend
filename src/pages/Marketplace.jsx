@@ -2,6 +2,7 @@ import { NavBar, Footer } from "../components";
 import { ProfileIcon, SearchIcon, BookmarkIcon } from "../assets/svg";
 import { products } from "../constants";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // `Elevate your home organization with our one-of-a-kind Laundry Basket crafted entirely from repurposed plastic bottle caps. Designed to seamlessly blend style and sustainability, this unique basket not only provides ample storage space but also serves as a powerful reminder of the potential that lies within plastic waste.
 
@@ -10,7 +11,7 @@ import { useState } from "react";
 export default function Marketplace() {
   const [query, setQuery] = useState("");
   const [tabQuery, setTabQuery] = useState("");
-  // console.log(products.filter(el => el.name))
+  const navigate = useNavigate();
 
   return (
     <div className="page">
@@ -30,16 +31,16 @@ export default function Marketplace() {
         <p className={tabQuery === "bedroom" ? "tab active" : "tab"} onClick={() => setTabQuery("bedroom")}>
           Bedroom items
         </p>
-        <div className={tabQuery === "garden" ? "tab active" : "tab"} onClick={() => setTabQuery("garden")}>Garden</div>
+        <p className={tabQuery === "garden" ? "tab active" : "tab"} onClick={() => setTabQuery("garden")}>Garden</p>
       </div>
       <section className="products">
         {products
           .filter((el) => el.name.toLowerCase().includes(query.toLowerCase()) && (tabQuery ? el.type === tabQuery : true))
           .map((product, key) => (
             <div className="product" key={`prod-${key}`}>
-              <div>
-                <img src={product.image} alt={`${product.name}`} />
-                <BookmarkIcon />
+              <div className="relative">
+                <img className="cursor-pointer" onClick={() => navigate(`/vendors/?vendor=${product?.username.replace(/\s+/g, '%')}&product=${key+1}`)} src={product.image} alt={`${product.name}`} />
+                <BookmarkIcon className="bookmark" />
               </div>
               <div className="details">
                 <p className=" small-text b-600 capitalize">{product.name}</p>
