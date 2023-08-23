@@ -212,7 +212,9 @@ footer .logo-wrap .primary {
   color: rgba(255, 255, 255, 0.6) !important;
 }
 
-.navlink-button {
+.navlink-button,.navlink-button:focus,
+.navlink-button:hover,
+.navlink-button:active {
   width: 10vw;
   height: 5vh;
   color: rgba(255, 255, 255, 0.6);
@@ -332,7 +334,7 @@ footer .logo-wrap .primary {
 
 .hero h1 {
   margin-bottom: 0em;
-  text-shadow: 0px 2px #1e1e1e;
+  text-shadow: 0px 1px #1e1e1e;
   color: #1e1e1e;
   font-size: 56px;
   font-family: MontserratBold;
@@ -441,7 +443,6 @@ footer svg {
   color: white;
   padding: 0 1vw;
   width: 30%;
-  margin: 0 ! important;
 }
 
 .searchbox {
@@ -745,6 +746,41 @@ footer svg {
   fill: var(--primaryColor);
 }
 
+.collage-flex {
+  gap: 1vw;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vw;
+  min-height: 400px;
+  align-self: center;
+}
+
+.collage-block {
+  gap: 1vw;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.collage-block img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1.5vw;
+}
+
+.collage-block.short {
+  height: 80%;
+}
+
+.collage-block.short img {
+  width: 80%;
+  border-radius: 1.5vw;
+  align-self: end;
+}
+
 @media (min-width: 1900px) {
   .hero .text-block {
     width: 80%;
@@ -1028,6 +1064,10 @@ footer svg {
   .impact-block {
     margin-bottom: 120px;
   }
+
+  .collage-block img {
+    border-radius: 15px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -1070,6 +1110,10 @@ footer svg {
     height: 100%;
     overflow: hidden;
   }
+
+  .about .text-block p {
+    width: 100%;
+}
 }
 
 @media (max-width: 425px) {
@@ -1179,6 +1223,16 @@ footer svg {
   .impact .subtitle {
     width: 100%;
     max-width: 350px;
+  }
+
+  .collage-flex {
+    height: 350px;
+    gap: 8px;
+    min-height: auto;
+  }
+
+  .collage-block.short img {
+    width: 100%;
   }
 }
 
