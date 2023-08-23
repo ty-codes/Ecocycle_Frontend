@@ -13,6 +13,11 @@ import globe from './globe.png';
 import PlasticBottles from './plastic_bottles.png';
 import bin from './bin.png';
 import man from './man.png';
+import RBin from './r-bin.png';
+import RHome from './recycled-home.png';
+import trashbag from './trashbag.png';
+import RBottles from './r-bottles.png';
+
 
 export {
     hero,
@@ -29,5 +34,9 @@ export {
     globe,
     PlasticBottles,
     bin,
-    man
+    man,
+    RBin,
+    RHome,
+    trashbag,
+    RBottles
 }
