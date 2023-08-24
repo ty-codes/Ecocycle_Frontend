@@ -211,9 +211,9 @@ export const products = [
     image: P6
   },
   {
-    name: "the icon wallpaper",
+    name: "the icon lamp",
     description: "Organize your bedroom and kitchen items without hassle.",
-    username: "derrick t",
+    username: "john p",
     price: 2500,
     type: "bedroom",
     sold: 50,
@@ -222,7 +222,7 @@ export const products = [
   {
     name: "chandelier",
     description: "Organize your bedroom and kitchen items without hassle.",
-    username: "derrick t",
+    username: "john p",
     price: 2500,
     type: "decorations",
     sold: 50,
