@@ -26,6 +26,9 @@ import P6 from './marketplace/p6.png';
 import P7 from './marketplace/p7.png';
 import P8 from './marketplace/p8.png';
 import P9 from './marketplace/p9.png';
+import S1 from './sites/s1.png';
+import S2 from './sites/s2.png';
+import female from "./female.png";
 
 export {
     hero,
@@ -55,5 +58,8 @@ export {
     P6,
     P7,
     P8,
-    P9
+    P9,
+    S1,
+    S2,
+    female
 }
