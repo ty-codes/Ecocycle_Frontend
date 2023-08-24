@@ -222,7 +222,7 @@ export const products = [
   {
     name: "chandelier",
     description: "Organize your bedroom and kitchen items without hassle.",
-    username: "john p",
+    username: "sam s",
     price: 2500,
     type: "decorations",
     sold: 50,
