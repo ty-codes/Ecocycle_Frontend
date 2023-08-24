@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 // import moment from "moment/moment";
-import { P1, P2, P3, P4, P5, P6, P7, P8, P9 } from "../assets";
+import { P1, P2, P3, P4, P5, P6, P7, P8, P9, S1, S2, female } from "../assets";
 
 const width = {
   mobileS: "320px",
@@ -157,12 +157,12 @@ export const logout = () => {
 export const products = [
   {
     name: "laundry basket",
-    description: "Organize your bedroom and kirchen items without hassle.",
+    description: "Organize your bedroom and kitchen items without hassle.",
     username: "derrick t",
     price: 2500,
-	type: "home",
+    type: "home",
     sold: 50,
-	image: P1
+    image: P1
   },
   {
     name: "spooner wallclock",
@@ -170,71 +170,147 @@ export const products = [
       "Wall clock made with plastic spoons to add to your home beauty.",
     username: "susan f",
     price: 2500,
-	type: "decorations",
+    type: "decorations",
     sold: 50,
-	image: P5
+    image: P5
   },
   {
     name: "items basket",
-    description: "Organize your bedroom and kirchen items without hassle.",
+    description: "Organize your bedroom and kitchen items without hassle.",
     username: "derrick t",
     price: 2500,
-	type: "kitchen",
+    type: "kitchen",
     sold: 50,
-	image: P3
+    image: P3
   },
   {
     name: "items basket",
-    description: "Organize your bedroom and kirchen items without hassle.",
+    description: "Organize your bedroom and kitchen items without hassle.",
     username: "derrick t",
     price: 2500,
-	type: "bedroom",
+    type: "bedroom",
     sold: 50,
-	image: P4
+    image: P4
   },
   {
     name: "the cap stool",
-    description: "Organize your bedroom and kirchen items without hassle.",
+    description: "Organize your bedroom and kitchen items without hassle.",
     username: "derrick t",
     price: 2500,
-	type: "home",
+    type: "home",
     sold: 50,
-	image: P2
+    image: P2
   },
   {
     name: "Peacock wallpaper",
-    description: "Organize your bedroom and kirchen items without hassle.",
+    description: "Organize your bedroom and kitchen items without hassle.",
     username: "derrick t",
     price: 2500,
-	type: "decorations",
+    type: "decorations",
     sold: 50,
-	image: P6
+    image: P6
   },
   {
     name: "the icon wallpaper",
-    description: "Organize your bedroom and kirchen items without hassle.",
+    description: "Organize your bedroom and kitchen items without hassle.",
     username: "derrick t",
     price: 2500,
-	type: "bedroom",
+    type: "bedroom",
     sold: 50,
-	image: P7
+    image: P7
   },
   {
     name: "chandelier",
-    description: "Organize your bedroom and kirchen items without hassle.",
+    description: "Organize your bedroom and kitchen items without hassle.",
     username: "derrick t",
     price: 2500,
-	type: "decorations",
+    type: "decorations",
     sold: 50,
-	image: P8
+    image: P8
   },
   {
     name: "Bird wall decor",
-    description: "Organize your bedroom and kirchen items without hassle.",
+    description: "Organize your bedroom and kitchen items without hassle.",
     username: "derrick t",
     price: 2500,
-	type: "decorations",
+    type: "decorations",
     sold: 50,
-	image: P9
+    image: P9
   }
 ];
+
+export const centres = [
+  {
+    image: S1,
+    location: "42, LGA office Ikeja, Lagos",
+    rating: 5,
+    name: "Ikeja collection center",
+    reviews: 40,
+    user_avatar: female
+  },
+  {
+    image: S2,
+    location: "25, Fobade, Lagos.",
+    rating: 4,
+    name: "Baruwa collection center",
+    reviews: 40,
+    user_avatar: female
+  },
+  {
+    image: S1,
+    location: "93, Ipaja road, Lagos",
+    rating: 3,
+    name: "Ipaja collection center",
+    reviews: 40,
+    user_avatar: female
+  },
+  {
+    image: S2,
+    location: "12A, Ojo-road, Lagos",
+    rating: 2,
+    name: "Ojo collection center",
+    reviews: 40,
+    user_avatar: female
+  },
+  {
+    image: S1,
+    location: "42, Old yaba road, Lagos",
+    rating: 4,
+    name: "Yaba collection center",
+    reviews: 40,
+    user_avatar: female
+  },
+  {
+    image: S2,
+    location: "36A, akoka, Lagos",
+    rating: 5,
+    name: "Unilag collection center",
+    reviews: 40,
+    user_avatar: female
+  },
+  {
+    image: S1,
+    location: "56A, lake road, Lagos",
+    rating: 4,
+    name: "Lake collection center",
+    reviews: 40,
+    user_avatar: female
+  },
+  {
+    image: S2,
+    location: "42, aba market, Aba",
+    rating: 2,
+    name: "Aba collection center",
+    reviews: 40,
+    user_avatar: female
+  },
+  {
+    image: S1,
+    location: "16, alaba market, Lagos",
+    rating: 4,
+    name: "Alaba collection center",
+    reviews: 40,
+    user_avatar: female
+  }
+  
+]
