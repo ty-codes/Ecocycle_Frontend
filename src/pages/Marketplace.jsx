@@ -4,10 +4,6 @@ import { products } from "../constants";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-// `Elevate your home organization with our one-of-a-kind Laundry Basket crafted entirely from repurposed plastic bottle caps. Designed to seamlessly blend style and sustainability, this unique basket not only provides ample storage space but also serves as a powerful reminder of the potential that lies within plastic waste.
-
-// const productDescription = ``Each basket is meticulously handcrafted, showcasing the beauty of upcycled materials while offering a functional and eco-conscious storage solution. Every bottle cap that adorns the basket tells a story of transformation - from waste to wonder.`;
-
 export default function Marketplace() {
   const [query, setQuery] = useState("");
   const [tabQuery, setTabQuery] = useState("");
