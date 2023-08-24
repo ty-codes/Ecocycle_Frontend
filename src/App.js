@@ -18,6 +18,7 @@ const Login = React.lazy(() => import("./pages/Login"));
 const Register = React.lazy(() => import("./pages/Register"));
 const Marketplace = React.lazy(() => import("./pages/Marketplace"));
 const Product = React.lazy(() => import("./pages/Product"));
+const Centres = React.lazy(() => import("./pages/Centres"));
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <Route path="register" element={<Register />} />
             <Route path="marketplace" element={<Marketplace />} />
             <Route path="vendors" element={<Product />} />
+            <Route path="centres" element={<Centres />} />
             <Route path="*" element={<Landing />} />
           </Routes>
         </Suspense>

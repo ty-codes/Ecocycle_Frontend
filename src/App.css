@@ -433,7 +433,7 @@ footer svg {
 .subscription-form {
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   border: none;
   outline: none;
   margin: 1vw 0;
@@ -466,7 +466,7 @@ footer svg {
 
 .copyrights {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 1vw;
   margin: auto;
   padding: 0.8vw 0;
@@ -512,7 +512,7 @@ footer svg {
 .impact-block {
   display: flex;
   margin: 40px 0;
-  justify-content: end;
+  justify-content: flex-end;
   position: relative;
   text-align: right;
 }
@@ -849,6 +849,8 @@ footer svg {
 
 .product svg {
   width: 1vw;
+  min-width: 18px;
+  min-height: 18px;
   height: 1vw;
   margin-right: 0.5vw;
 }
@@ -970,6 +972,24 @@ footer svg {
   margin-top: 3vw;
 }
 
+.site-flex {
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 1.5vw;
+}
+
+.site-flex .flex {
+  justify-content: flex-start !important;
+  gap: 1vw;
+}
+
+.user-avatar {
+  width: 4vw !important;
+  height: 4vw !important;
+  min-width: 45px !important;
+  min-height: 45px !important;
+}
+
 
 @media (min-width: 1900px) {
   .hero .text-block {
@@ -1000,6 +1020,12 @@ footer svg {
   h5 {
     font-size: 19px;
     line-height: 19px;
+    margin-bottom: 0.6em;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 17px;
     margin-bottom: 0.6em;
   }
 
@@ -1035,6 +1061,10 @@ footer svg {
 
   .mt_3 {
     margin-top: 50px;
+  }
+
+  .product svg {
+    margin-right: 10px;
   }
 
   .active-product-header {
