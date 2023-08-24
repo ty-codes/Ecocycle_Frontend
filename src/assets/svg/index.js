@@ -8,6 +8,7 @@ import { ReactComponent as CameraIcon } from "./camera.svg";
 import { ReactComponent as ProfileIcon } from "./profile.svg";
 import { ReactComponent as SearchIcon } from "./search.svg";
 import { ReactComponent as BookmarkIcon } from "./bookmark.svg";
+import { ReactComponent as GPSIcon } from "./gps.svg";
 
 
 export {
@@ -20,5 +21,6 @@ export {
     CameraIcon,
     ProfileIcon,
     SearchIcon,
-    BookmarkIcon
+    BookmarkIcon,
+    GPSIcon
 }
