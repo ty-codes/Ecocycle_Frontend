@@ -34,17 +34,17 @@ export default function NavBar() {
                             <Offcanvas.Body>
                                 <Nav >
                                 <Nav.Link href="/">Home</Nav.Link>
-                                <Nav.Link href="/">Collection Centres</Nav.Link>
+                                <Nav.Link href="/centres">Collection Centres</Nav.Link>
 
-                                    <Nav.Link href="/">About Us</Nav.Link>
-                                    <Nav.Link href="marketplace">Marketplace</Nav.Link>
+                                    <Nav.Link href="/#about">About Us</Nav.Link>
+                                    <Nav.Link href="/marketplace">Marketplace</Nav.Link>
 
 
                                     {isMobile && (
                                         <Create>
-                                           <Nav.Link href="register">Register</Nav.Link>
+                                           <Nav.Link href="/register">Register</Nav.Link>
 
-                                            <Button className='navlink-button' href="login" >
+                                            <Button className='navlink-button' href="/login" >
                                                 Sign in
                                             </Button>
                                         </Create>
@@ -56,9 +56,9 @@ export default function NavBar() {
                     </div>
                     {!isMobile &&
                         <Create>
-                            <Nav.Link href="register">Register</Nav.Link>
+                            <Nav.Link href="/register">Register</Nav.Link>
 
-                            <Button  className='navlink-button' href="login">
+                            <Button  className='navlink-button' href="/login">
                                 Sign in
                             </Button>
                         </Create>
