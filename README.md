@@ -1,7 +1,10 @@
 # Ecocycle
-Ecocycle Nigeria is a comprehensive solution designed to tackle the plastic waste problem in Nigeria by focusing on upcycling, education, and raising awareness about responsible plastic consumption. This product aims to reduce the environmental impact of plastic waster while also generating economic opportunities and fostering a culture of sustainability.
 
 This repository contains the frontend source code for Ecocycle.
+
+Ecocycle Nigeria is a comprehensive solution designed to tackle the plastic waste problem in Nigeria by focusing on upcycling, education, and raising awareness about responsible plastic consumption. This product aims to reduce the environmental impact of plastic waster while also generating economic opportunities and fostering a culture of sustainability.
+
+The Ecocycle app is a solution submitted for the Girls in Tech: Hack for the Environment hackathon.
 
 ## Status
 Still in progress 
@@ -17,6 +20,7 @@ Still in progress
 - Depositor
 
 ## Features
+- Landing page🟢
 - User login🟢
 - User register🟢
 - View collection sites 🟡
